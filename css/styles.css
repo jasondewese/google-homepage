@@ -1,0 +1,60 @@
+html, body {
+    background-color: #FFF;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+    
+    
+    flex: 1 1 auto;
+    
+   
+    
+    
+    grid-template-rows: 3em 4fr 1fr 5fr 3em;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "back-left logo back-right"
+    "back-left search back-right"
+    "back-left buttons back-right"
+    "footer footer footer";
+}
+
+
+.item1 {
+    grid-area: header;
+    background-color: blue;
+    color: white;
+}
+
+.item2 {
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+    background-color: #FFF;
+}
+
+
+
+.item3 {
+    grid-area: search;
+    background-color: red;
+    color: white;
+}
+
+.item4 {
+    grid-area: buttons;
+    background-color: black;
+    color: white;
+}
+
+.item5 {
+    grid-area: footer;
+    background-color: #AAAAAA;
+}
