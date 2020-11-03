@@ -84,15 +84,19 @@ html, body {
 when moused over*/
 .header-links1:hover {
     text-decoration: underline;
+    color: #333;
 }
 .header-links2:hover {
     text-decoration: underline;
+    color: #333;
 }
 .header-links3:hover {
     text-decoration: underline;
+    color: #333;
 }
 .header-links4:hover {
     text-decoration: underline;
+    color: #333;
 }
 
 .settings-button {
@@ -195,11 +199,33 @@ when moused over*/
     top: 5px;
 }
 
-/*Container for seach and "I'm Feeling Lucky" button */
+/*Container for "Google Search" and "I'm Feeling Lucky" button */
 .item4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     grid-area: buttons;
-    background-color: black;
+    background-color: FFF;
     color: white;
+}
+
+.search-buttons {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border: none;
+    padding: .75em 1.5em .75em 1.5em;
+    color: #333;
+    border-radius: 3px;
+    font-size: 14px;
+    
+}
+
+.search-buttons:hover {
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 1px;
+    color: #000;
 }
 
 /*Container for footer links*/
