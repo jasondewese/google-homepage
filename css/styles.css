@@ -20,16 +20,14 @@ html, body {
     display: grid;
     flex: 1 1 auto;
     
-    grid-template-rows: 3em 3fr auto 5fr 2.5em;
-    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 3em 3fr auto 5fr 3em;
+    grid-template-columns: 2fr 3fr 2fr;
     grid-template-areas: 
     "header header header"
     "back-left logo back-right"
     "back-left search back-right"
     "back-left buttons back-right"
     "footer footer footer";
-
-    
 }
 
 /*Container for header links*/
@@ -37,15 +35,6 @@ html, body {
     grid-area: header;
     background-color:#FFF;
     color: white;
-    
-}
-
-.header-links {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
     
 }
 
@@ -76,6 +65,10 @@ html, body {
 }
 
 .header-links {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-decoration: none; 
     color:black;
 }
@@ -232,5 +225,77 @@ when moused over*/
 .item5 {
     grid-area: footer;
     background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
+.footer-1 {
+    justify-self: flex-start;
+    width: 50%;
+    background-color: #f2f2f2;
+    align-items: center;
+    display: flex;
+    
+    
+}
+
+.footer-2 {
+    display: flex;
+    justify-self: flex-end;
+    width: 50%em;
+    background-color: #f2f2f2;
+    
+    justify-content: flex-end;
+    align-items: center;
+    
+    padding-right: 30px;
+}
+
+
+.footer-items {
+    margin: 10px;
+    padding: 0;
+
+}
+
+.footer-links {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none; 
+    color: #555;
+    font-size: 15px;
+    text-decoration: none; 
+    font-size: 15px;
+}
+
+
+/*Creates underline effect for each individual link
+when moused over*/
+.footer-links1:hover {
+    text-decoration: underline;
+    color: #555;
+}
+.footer-links2:hover {
+    text-decoration: underline;
+    color: #555;
+}
+.footer-links3:hover {
+    text-decoration: underline;
+    color: #555;
+}
+.footer-links4:hover {
+    text-decoration: underline;
+    color: #555;
+}
+.footer-links5:hover {
+    text-decoration: underline;
+    color: #555;
+}
+.footer-links6:hover {
+    text-decoration: underline;
+    color: #555;
+}
