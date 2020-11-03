@@ -1,13 +1,17 @@
 html, body {
     background-color: #FFF;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     /*All elements in body are now CSS flex elements*/
     display: flex;
 
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+
+    /*Remove slight oversizing to get rid of un-necessary
+    scroll bar*/
+    overflow: hidden;
 }
 
 /*Conatins all visible page contents - organizes into grid*/
@@ -16,21 +20,103 @@ html, body {
     display: grid;
     flex: 1 1 auto;
     
-    grid-template-rows: 3em 3fr auto 5fr 3em;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 3em 3fr auto 5fr 2.5em;
+    grid-template-columns: 2fr 4fr 2fr;
     grid-template-areas: 
     "header header header"
     "back-left logo back-right"
     "back-left search back-right"
     "back-left buttons back-right"
     "footer footer footer";
+
+    
 }
 
 /*Container for header links*/
 .item1 {
     grid-area: header;
-    background-color: blue;
+    background-color:#FFF;
     color: white;
+    
+}
+
+.header-links {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+
+.header-1 {
+    justify-self: flex-start;
+    width: 15em;
+    background-color: #FFF;
+    align-items: center;
+    display: flex;
+    
+}
+
+.header-2 {
+    justify-self: flex-end;
+    width: 20em;
+    background-color: #FFF;
+    
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    padding-right: 30px;
+}
+
+.header-items {
+    margin: 10px;
+    padding: 0;
+
+}
+
+.header-links {
+    text-decoration: none; 
+    color:black;
+}
+
+/*Creates underline effect for each individual link
+when moused over*/
+.header-links1:hover {
+    text-decoration: underline;
+}
+.header-links2:hover {
+    text-decoration: underline;
+}
+.header-links3:hover {
+    text-decoration: underline;
+}
+.header-links4:hover {
+    text-decoration: underline;
+}
+
+.settings-button {
+    width: 1.5em;
+    opacity: .70;
+}
+.settings-button:hover {
+    /*box-shadow: 0px 0px 5px #AAA;*/
+    /*darken box when user mouseover*/
+    opacity: 1.0;
+}
+
+.login-button {
+    color: white;
+    background-color: #4285f4;
+    font-size: 14px;
+    width: 75%;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    border-radius: 3px;
+    
+
 }
 
 /*Container for Google logo image*/
@@ -119,5 +205,6 @@ html, body {
 /*Container for footer links*/
 .item5 {
     grid-area: footer;
-    background-color: #AAAAAA;
+    background-color: #f2f2f2;
 }
+
